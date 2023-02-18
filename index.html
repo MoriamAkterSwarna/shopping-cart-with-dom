@@ -52,12 +52,12 @@
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure><img class="w-full h-40" src="img/coffee.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Coffee JS</h2>
+                      <h2 id="first-name" class="card-title">Coffee JS</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <p>Price: $<span>110</span></p>
-                      <p>Quantity: <span>5</span></p>
+                      <p>Price: $<span id="first-price">110</span></p>
+                      <p>Quantity: <span id="first-quantity">5</span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Add To CART</button>
+                        <button id="first-card" class="btn btn-primary">Add To CART</button>
                       </div>
                     </div>
                   </div>
@@ -70,7 +70,7 @@
                       <p>Price: $<span>200</span></p>
                       <p>Quantity: <span>10</span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Add To CART</button>
+                        <button id="second-card" class="btn btn-primary">Add To CART</button>
                       </div>
                     </div>
                   </div>
@@ -79,12 +79,12 @@
                   <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure><img class="w-full h-40" src="img/panda.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Panda JS</h2>
+                      <h2 id="third-name" class="card-title">Panda JS</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <p>Price: $<span>250</span></p>
-                      <p>Quantity: <span>5</span></p>
+                      <p>Price: $<span id="third-price">250</span></p>
+                      <p>Quantity: <span id="third-quantity">5</span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Add To CART</button>
+                        <button id="third-card" class="btn btn-primary">Add To CART</button>
                       </div>
                     </div>
                   </div>
@@ -97,7 +97,7 @@
                       <p>Price: $<span>100</span></p>
                       <p>Quantity: <span>3</span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Add To CART</button>
+                        <button id="second-last" class="btn btn-primary">Add To CART</button>
                       </div>
                     </div>
                   </div>
@@ -105,20 +105,20 @@
                   <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure><img class="w-full h-40" src="img/vue-js.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">VUE JS</h2>
+                      <h2 id="last-title" class="card-title">VUE JS</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                       <!-- <p>Price: $<span>110</span></p>
                       <p>Quantity: <span>5</span></p> -->
-                      <input type="text" placeholder="Price" class="input input-bordered input-sm w-full max-w-xs" />
-                      <input type="text" placeholder="Quantity" class="input input-bordered input-sm w-full max-w-xs" />
+                      <input id="first-input" type="text" placeholder="Price" class="input input-bordered input-sm w-full max-w-xs" />
+                      <input id="second-input" type="text" placeholder="Quantity" class="input input-bordered input-sm w-full max-w-xs" />
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Add To CART</button>
+                        <button id="last-card" class="btn btn-primary">Add To CART</button>
                       </div>
                     </div>
                   </div>
             </div>
             <div class="cart-details w-full md:w-[30%] lg:w-[30%] mx-auto mt-12">
-                <h1 class="text-3xl text-center font-bold underline">Total Products: <span>0</span></h1>
+                <h1 id="total-product" class="text-3xl text-center font-bold underline">Total Products: <span>0</span></h1>
 
                 <div class="overflow-x-auto">
                     <table class="table w-full">
@@ -128,10 +128,11 @@
                           <th>No</th>
                           <th>Name</th>
                           <th>Price</th>
+                          <th>Quantity</th>
                           <th>Total</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="table-container">
                         <!-- row 1 -->
                         <!-- <tr>
                           <th>1</th>
