@@ -78,7 +78,7 @@ document.getElementById("second-last").addEventListener("click", function (e) {
     //   show the data using function
     displayData(pd.pName, pd.pPrice, pd.pQuantity, sumTotal);
     //   disabled button using function
-    disabledButton("second-card");
+    disabledButton("second-last");
   });
   
 
